@@ -1,0 +1,159 @@
+:root{
+    /* ## Colors */
+
+/* ### Primary */
+
+   --Soft-blue: hsl(215, 51%, 70%);
+   --Cyan: hsl(178, 100%, 50%);
+
+/* ### Neutral */
+
+   --Very-dark-blue: hsl(217, 54%, 11%);
+   --Very-dark-blue-card: hsl(216, 50%, 16%);
+   --Very-dark-blue-line: hsl(215, 32%, 27%);
+   --White: hsl(0, 0%, 100%);
+/* ### Body Copy */
+
+   --Font-size-paragraph: 18px;
+   --Font-small: 300;
+   --font-medium: 400;
+   --font-large: 600;
+
+}
+
+@font-face {
+    font-family: small;
+    src: url(assets/static/Outfit-Light.ttf);}
+    @font-face {
+        font-family: medium;
+        src: url(assets/static/Outfit-Medium.ttf);}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Very-dark-blue);
+    height: 95vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background: var(--Very-dark-blue-card);
+    padding: 20px;
+    width: 240px;
+    height: 430px;
+    border-radius: 15px;
+    /* box-shadow: -5px 9px 18px 0px; */
+    text-align: left;
+}
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+  width: 240px;
+  height: 230px;
+  /* height: 208px; */
+  background-size: 100%;
+  border-radius: 5px;
+}
+.svg{
+    position: absolute;
+    display: none;
+    /* background: none; */
+}
+
+.img:hover{
+    cursor: pointer;
+    background: var(--Cyan);
+    mix-blend-mode: overlay;
+    color: white;
+}
+.svg:hover{
+    display: block;
+}
+
+.equilibruim{
+    color: var(--White);
+    font-weight: var(--font-large);
+    font-family: medium;
+    padding: 0;
+}
+
+.equilibruim:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.text{
+    color: var(--Soft-blue);
+    font-weight: var(--Font-small);
+    font-size: small;
+    font-family: small;
+    margin: 0;
+    padding: 0;
+}
+
+.eth{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+i{
+  display: flex;
+  font-style: normal;
+  flex-direction: row;
+  font-family: small;
+  align-items: center;
+  gap: 5px;
+  color: var(--Cyan);
+}
+
+.days{
+    display: flex;
+  font-style: normal;
+  flex-direction: row;
+  font-family: small;
+  align-items: center;
+  gap: 5px;
+  color: var(--Soft-blue);
+}
+
+.line{
+    height: 2px;
+    background: var(--Very-dark-blue-line);
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.pic{
+    width: 26px;
+    height: 26px;
+}
+
+.creation{
+    color: var(--Soft-blue);
+    font-weight: var(--Font-small);
+    font-family: small;
+}
+
+.jules{
+    color: var(--White);
+    font-weight: var(--font-medium);
+    font-family: small;
+}
+
+.jules:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
