@@ -52,6 +52,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .img{
@@ -63,9 +64,15 @@ main{
 }
 .svg{
     position: absolute;
-    display: none;
-    /* background: none; */
+   opacity: 0;
+  background-color:  hsl(178, 100%, 50%, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .img:hover{
     cursor: pointer;
@@ -74,7 +81,9 @@ main{
     color: white;
 }
 .svg:hover{
-    display: block;
+    opacity: 1;
+    cursor: pointer;
+    transition: .3s;
 }
 
 .equilibruim{
